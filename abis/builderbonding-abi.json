@@ -1,0 +1,1248 @@
+{
+  "programType": "contract",
+  "specVersion": "1",
+  "encodingVersion": "1",
+  "concreteTypes": [
+    {
+      "type": "()",
+      "concreteTypeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+    },
+    {
+      "type": "(u64, enum std::option::Option<u64>)",
+      "concreteTypeId": "af6d13ce5f8372142a5bab16791d47fbc0c0d0e77684217b360e22d698078b89",
+      "metadataTypeId": 0
+    },
+    {
+      "type": "enum errors::BondingError",
+      "concreteTypeId": "f6533baa58b124574115f3ef9c9f0b308c6029ec41358389cafdd6451f82f411",
+      "metadataTypeId": 2
+    },
+    {
+      "type": "enum std::identity::Identity",
+      "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335",
+      "metadataTypeId": 3
+    },
+    {
+      "type": "enum std::option::Option<struct abis::BuilderInfo>",
+      "concreteTypeId": "83820565ff8f95e5be9a8dccde8e5315ad686d8b625a8409aca3022aa09030b7",
+      "metadataTypeId": 4,
+      "typeArguments": [
+        "f90c363c448fa523d304a47da290b91fe25d80aee45aad68a5c891976bf8908e"
+      ]
+    },
+    {
+      "type": "enum std::option::Option<struct abis::PositionInfo>",
+      "concreteTypeId": "0a159553705beee179b8b22493c3746407c03541cb9ecef9a0219e1d3b8e2c4c",
+      "metadataTypeId": 4,
+      "typeArguments": [
+        "db34990f081c8e8b6aea0199e0249c50f1d0e67a410cde66165b3ff3828fd518"
+      ]
+    },
+    {
+      "type": "enum std::option::Option<struct std::string::String>",
+      "concreteTypeId": "7c06d929390a9aeeb8ffccf8173ac0d101a9976d99dda01cce74541a81e75ac0",
+      "metadataTypeId": 4,
+      "typeArguments": [
+        "9a7f1d3e963c10e0a4ea70a8e20a4813d1dc5682e28f74cb102ae50d32f7f98c"
+      ]
+    },
+    {
+      "type": "enum std::option::Option<u64>",
+      "concreteTypeId": "d852149004cc9ec0bbe7dc4e37bffea1d41469b759512b6136f2e865a4c06e7d",
+      "metadataTypeId": 4,
+      "typeArguments": [
+        "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+      ]
+    },
+    {
+      "type": "enum std::option::Option<u8>",
+      "concreteTypeId": "2da102c46c7263beeed95818cd7bee801716ba8303dddafdcd0f6c9efda4a0f1",
+      "metadataTypeId": 4,
+      "typeArguments": [
+        "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+      ]
+    },
+    {
+      "type": "enum token_identifier::TokenIdentifier",
+      "concreteTypeId": "2b8a67d1c416c0ab1fdf66c3c3241b43ffba4b7b47c1375f309823ea242061af",
+      "metadataTypeId": 5
+    },
+    {
+      "type": "enum token_identifier::TokenIdentifierError",
+      "concreteTypeId": "902a315be529635cdbb2b5598f30b2fefdd23324265f1e07951ce48433bd7014",
+      "metadataTypeId": 6
+    },
+    {
+      "type": "struct abis::BuilderInfo",
+      "concreteTypeId": "f90c363c448fa523d304a47da290b91fe25d80aee45aad68a5c891976bf8908e",
+      "metadataTypeId": 9
+    },
+    {
+      "type": "struct abis::GlobalInfo",
+      "concreteTypeId": "adc8dd4baca5066c92fa95b86aa31f9124c4e8d36a6f0383bdd0db34555bab6d",
+      "metadataTypeId": 10
+    },
+    {
+      "type": "struct abis::PositionInfo",
+      "concreteTypeId": "db34990f081c8e8b6aea0199e0249c50f1d0e67a410cde66165b3ff3828fd518",
+      "metadataTypeId": 11
+    },
+    {
+      "type": "struct events::BaseRewardsSyncedEvent",
+      "concreteTypeId": "e7f6842b480959e781d0c8b3513b177c21113a83533b51d77da7c859efe567d1",
+      "metadataTypeId": 12
+    },
+    {
+      "type": "struct events::BuilderOwnershipTransferredEvent",
+      "concreteTypeId": "390a82d2fd0d3a4ad4a1318900d79ce95ed499fd2419381b1b85db5b8c4ed6c1",
+      "metadataTypeId": 13
+    },
+    {
+      "type": "struct events::BuilderRewardsExtendedEvent",
+      "concreteTypeId": "b1fc1f25a77262adad8eecc23a352fd8961bc6a2bacc44ffad1f91eaf392668b",
+      "metadataTypeId": 14
+    },
+    {
+      "type": "struct events::BuilderRewardsFundedEvent",
+      "concreteTypeId": "03d0d240c9240e95045a4d1687649048c58009acbbac7f3cc2462424e954446f",
+      "metadataTypeId": 15
+    },
+    {
+      "type": "struct events::NewBuilderEvent",
+      "concreteTypeId": "d2f01ee2b696093ecfc86da82e11864bacdc9ed5007bf1f5e980c9f6aa1972f5",
+      "metadataTypeId": 16
+    },
+    {
+      "type": "struct events::NewPositionEvent",
+      "concreteTypeId": "fc022658cc2ae066546794de628b6f106705641b98376b35c3ed23a5ab97a46e",
+      "metadataTypeId": 17
+    },
+    {
+      "type": "struct events::OwnershipTransferredEvent",
+      "concreteTypeId": "778bf161a9cc6fdc75697ee7ab3cb9b995998dd2ea7617eabe419643c2235fd6",
+      "metadataTypeId": 18
+    },
+    {
+      "type": "struct events::ParametersSetEvent",
+      "concreteTypeId": "f923c913ecb7c94ce3baa647d89fa0227b53e2164bc67b9c5123458a83a9fae3",
+      "metadataTypeId": 19
+    },
+    {
+      "type": "struct events::PositionBondingEvent",
+      "concreteTypeId": "a8978ed80be9a6a2bc564d888732c576302df61c5e94aa6ebda2642fcab202a6",
+      "metadataTypeId": 20
+    },
+    {
+      "type": "struct events::PositionDepositEvent",
+      "concreteTypeId": "6d400b2f23401091672a24f55f96680d4a28b0b3e8d8b6a6506b7cfccad56c5a",
+      "metadataTypeId": 21
+    },
+    {
+      "type": "struct events::PositionWithdrawEvent",
+      "concreteTypeId": "2e62270b6ba94126180979def77bc32a39556d22a923b07e5693be8cbaaf8a97",
+      "metadataTypeId": 22
+    },
+    {
+      "type": "struct events::RewardsClaimedEvent",
+      "concreteTypeId": "9be19c77548dbb8f578e65da21d5e85dbc2b7c22f6a863e837039287a42e013c",
+      "metadataTypeId": 23
+    },
+    {
+      "type": "struct standards::src20::SetDecimalsEvent",
+      "concreteTypeId": "fbe071a6e7ca2b2b5e503e82638f9f11c861a6fb452b65473eca8260db87392d",
+      "metadataTypeId": 24
+    },
+    {
+      "type": "struct standards::src20::SetNameEvent",
+      "concreteTypeId": "6ce295b0fb4c1c15e8ed1cfa4babda47d8a04940a5266a3229e12243a2e37c2c",
+      "metadataTypeId": 25
+    },
+    {
+      "type": "struct standards::src20::SetSymbolEvent",
+      "concreteTypeId": "a8a4b78066c51a50da6349bd395fe1c67e774d75c1db2c5c22288a432d7a363d",
+      "metadataTypeId": 26
+    },
+    {
+      "type": "struct std::asset_id::AssetId",
+      "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974",
+      "metadataTypeId": 28
+    },
+    {
+      "type": "struct std::contract_id::ContractId",
+      "concreteTypeId": "29c10735d33b5159f0c71ee1dbd17b36a3e69e41f00fab0d42e1bd9f428d8a54",
+      "metadataTypeId": 31
+    },
+    {
+      "type": "struct std::string::String",
+      "concreteTypeId": "9a7f1d3e963c10e0a4ea70a8e20a4813d1dc5682e28f74cb102ae50d32f7f98c",
+      "metadataTypeId": 32
+    },
+    {
+      "type": "u32",
+      "concreteTypeId": "d7649d428b9ff33d188ecbf38a7e4d8fd167fa01b2e10fe9a8f9308e52f1d7cc"
+    },
+    {
+      "type": "u64",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+    },
+    {
+      "type": "u8",
+      "concreteTypeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+    }
+  ],
+  "metadataTypes": [
+    {
+      "type": "(_, _)",
+      "metadataTypeId": 0,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 4,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "b256",
+      "metadataTypeId": 1
+    },
+    {
+      "type": "enum errors::BondingError",
+      "metadataTypeId": 2,
+      "components": [
+        {
+          "name": "InvalidAsset",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "InsufficientFunds",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "MustBeOwner",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "MustBeBuilderOwner",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "IncorrectRewardAsset",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "NewEndTimeMustBeGreater",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "NoRewardsToClaim",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "RewardsShouldHaveAlreadyBeenClaimed",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "MaxDepositsReached",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "DepositTimelockNotExpired",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum std::identity::Identity",
+      "metadataTypeId": 3,
+      "components": [
+        {
+          "name": "Address",
+          "typeId": 27
+        },
+        {
+          "name": "ContractId",
+          "typeId": 31
+        }
+      ]
+    },
+    {
+      "type": "enum std::option::Option",
+      "metadataTypeId": 4,
+      "components": [
+        {
+          "name": "None",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "Some",
+          "typeId": 7
+        }
+      ],
+      "typeParameters": [
+        7
+      ]
+    },
+    {
+      "type": "enum token_identifier::TokenIdentifier",
+      "metadataTypeId": 5,
+      "components": [
+        {
+          "name": "InputCoin",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "OutputCoin",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "CallerBalance",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum token_identifier::TokenIdentifierError",
+      "metadataTypeId": 6,
+      "components": [
+        {
+          "name": "MustBeCalledFromContract",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "MustBeCalledFromScript",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "InvalidTokenAmount",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "InvalidTokenId",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "generic T",
+      "metadataTypeId": 7
+    },
+    {
+      "type": "raw untyped ptr",
+      "metadataTypeId": 8
+    },
+    {
+      "type": "struct abis::BuilderInfo",
+      "metadataTypeId": 9,
+      "components": [
+        {
+          "name": "owner",
+          "typeId": 3
+        },
+        {
+          "name": "reward_asset",
+          "typeId": 28
+        },
+        {
+          "name": "end_time",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "total_bonded",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "remaining_reward",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct abis::GlobalInfo",
+      "metadataTypeId": 10,
+      "components": [
+        {
+          "name": "total_deposited",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "owner",
+          "typeId": 3
+        },
+        {
+          "name": "max_deposits",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "deposit_timelock",
+          "typeId": "d7649d428b9ff33d188ecbf38a7e4d8fd167fa01b2e10fe9a8f9308e52f1d7cc"
+        }
+      ]
+    },
+    {
+      "type": "struct abis::PositionInfo",
+      "metadataTypeId": 11,
+      "components": [
+        {
+          "name": "amount_deposited",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "pending_base_rewards",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "bonded_builder",
+          "typeId": 4,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        },
+        {
+          "name": "pending_builder_rewards",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct events::BaseRewardsSyncedEvent",
+      "metadataTypeId": 12,
+      "components": [
+        {
+          "name": "amount_claimed",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct events::BuilderOwnershipTransferredEvent",
+      "metadataTypeId": 13,
+      "components": [
+        {
+          "name": "builder_id",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "new_owner",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "struct events::BuilderRewardsExtendedEvent",
+      "metadataTypeId": 14,
+      "components": [
+        {
+          "name": "builder_id",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "end_time",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct events::BuilderRewardsFundedEvent",
+      "metadataTypeId": 15,
+      "components": [
+        {
+          "name": "builder_id",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "amount",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct events::NewBuilderEvent",
+      "metadataTypeId": 16,
+      "components": [
+        {
+          "name": "builder_id",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "owner",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "struct events::NewPositionEvent",
+      "metadataTypeId": 17,
+      "components": [
+        {
+          "name": "position_id",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct events::OwnershipTransferredEvent",
+      "metadataTypeId": 18,
+      "components": [
+        {
+          "name": "new_owner",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "struct events::ParametersSetEvent",
+      "metadataTypeId": 19,
+      "components": [
+        {
+          "name": "max_deposits",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "deposit_timelock",
+          "typeId": "d7649d428b9ff33d188ecbf38a7e4d8fd167fa01b2e10fe9a8f9308e52f1d7cc"
+        }
+      ]
+    },
+    {
+      "type": "struct events::PositionBondingEvent",
+      "metadataTypeId": 20,
+      "components": [
+        {
+          "name": "position_id",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "builder_id",
+          "typeId": 4,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "struct events::PositionDepositEvent",
+      "metadataTypeId": 21,
+      "components": [
+        {
+          "name": "position_id",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "amount",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct events::PositionWithdrawEvent",
+      "metadataTypeId": 22,
+      "components": [
+        {
+          "name": "position_id",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "amount",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct events::RewardsClaimedEvent",
+      "metadataTypeId": 23,
+      "components": [
+        {
+          "name": "position_id",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "reward_asset",
+          "typeId": 28
+        },
+        {
+          "name": "amount",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "recipient",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "struct standards::src20::SetDecimalsEvent",
+      "metadataTypeId": 24,
+      "components": [
+        {
+          "name": "asset",
+          "typeId": 28
+        },
+        {
+          "name": "decimals",
+          "typeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+        },
+        {
+          "name": "sender",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "struct standards::src20::SetNameEvent",
+      "metadataTypeId": 25,
+      "components": [
+        {
+          "name": "asset",
+          "typeId": 28
+        },
+        {
+          "name": "name",
+          "typeId": 4,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 32
+            }
+          ]
+        },
+        {
+          "name": "sender",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "struct standards::src20::SetSymbolEvent",
+      "metadataTypeId": 26,
+      "components": [
+        {
+          "name": "asset",
+          "typeId": 28
+        },
+        {
+          "name": "symbol",
+          "typeId": 4,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 32
+            }
+          ]
+        },
+        {
+          "name": "sender",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "struct std::address::Address",
+      "metadataTypeId": 27,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": 1
+        }
+      ]
+    },
+    {
+      "type": "struct std::asset_id::AssetId",
+      "metadataTypeId": 28,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": 1
+        }
+      ]
+    },
+    {
+      "type": "struct std::bytes::Bytes",
+      "metadataTypeId": 29,
+      "components": [
+        {
+          "name": "buf",
+          "typeId": 30
+        },
+        {
+          "name": "len",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct std::bytes::RawBytes",
+      "metadataTypeId": 30,
+      "components": [
+        {
+          "name": "ptr",
+          "typeId": 8
+        },
+        {
+          "name": "cap",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct std::contract_id::ContractId",
+      "metadataTypeId": 31,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": 1
+        }
+      ]
+    },
+    {
+      "type": "struct std::string::String",
+      "metadataTypeId": 32,
+      "components": [
+        {
+          "name": "bytes",
+          "typeId": 29
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [
+        {
+          "name": "position_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "position_token",
+          "concreteTypeId": "2b8a67d1c416c0ab1fdf66c3c3241b43ffba4b7b47c1375f309823ea242061af"
+        },
+        {
+          "name": "builder_id",
+          "concreteTypeId": "d852149004cc9ec0bbe7dc4e37bffea1d41469b759512b6136f2e865a4c06e7d"
+        }
+      ],
+      "name": "bond_to_builder",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "position_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "position_token",
+          "concreteTypeId": "2b8a67d1c416c0ab1fdf66c3c3241b43ffba4b7b47c1375f309823ea242061af"
+        },
+        {
+          "name": "reward_asset",
+          "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974"
+        },
+        {
+          "name": "recipient",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "claim_rewards",
+      "output": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "owner",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        },
+        {
+          "name": "reward_asset",
+          "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974"
+        }
+      ],
+      "name": "create_builder",
+      "output": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "recipient",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "create_position",
+      "output": "af6d13ce5f8372142a5bab16791d47fbc0c0d0e77684217b360e22d698078b89",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "position_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "position_token",
+          "concreteTypeId": "2b8a67d1c416c0ab1fdf66c3c3241b43ffba4b7b47c1375f309823ea242061af"
+        }
+      ],
+      "name": "deposit_assets",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "builder_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "end_time",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "extend_builder_rewards",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "builder_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "fund_builder_rewards",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "position_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "reward_asset",
+          "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974"
+        }
+      ],
+      "name": "get_accrued_rewards",
+      "output": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "builder_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "get_builder_info",
+      "output": "83820565ff8f95e5be9a8dccde8e5315ad686d8b625a8409aca3022aa09030b7",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "get_global_info",
+      "output": "adc8dd4baca5066c92fa95b86aa31f9124c4e8d36a6f0383bdd0db34555bab6d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "position_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "get_position_info",
+      "output": "0a159553705beee179b8b22493c3746407c03541cb9ecef9a0219e1d3b8e2c4c",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "max_deposits",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "deposit_timelock",
+          "concreteTypeId": "d7649d428b9ff33d188ecbf38a7e4d8fd167fa01b2e10fe9a8f9308e52f1d7cc"
+        }
+      ],
+      "name": "set_parameters",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "sync_base_rewards",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "builder_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "new_owner",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "transfer_builder_ownership",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "new_owner",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "transfer_ownership",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "position_id",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "position_token",
+          "concreteTypeId": "2b8a67d1c416c0ab1fdf66c3c3241b43ffba4b7b47c1375f309823ea242061af"
+        },
+        {
+          "name": "amount",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "recipient",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "withdraw_assets",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "asset",
+          "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974"
+        }
+      ],
+      "name": "decimals",
+      "output": "2da102c46c7263beeed95818cd7bee801716ba8303dddafdcd0f6c9efda4a0f1",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "asset",
+          "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974"
+        }
+      ],
+      "name": "name",
+      "output": "7c06d929390a9aeeb8ffccf8173ac0d101a9976d99dda01cce74541a81e75ac0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "asset",
+          "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974"
+        }
+      ],
+      "name": "symbol",
+      "output": "7c06d929390a9aeeb8ffccf8173ac0d101a9976d99dda01cce74541a81e75ac0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "total_assets",
+      "output": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "asset",
+          "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974"
+        }
+      ],
+      "name": "total_supply",
+      "output": "d852149004cc9ec0bbe7dc4e37bffea1d41469b759512b6136f2e865a4c06e7d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    }
+  ],
+  "loggedTypes": [
+    {
+      "logId": "10388169761239950172",
+      "concreteTypeId": "902a315be529635cdbb2b5598f30b2fefdd23324265f1e07951ce48433bd7014"
+    },
+    {
+      "logId": "16714692388459207143",
+      "concreteTypeId": "e7f6842b480959e781d0c8b3513b177c21113a83533b51d77da7c859efe567d1"
+    },
+    {
+      "logId": "12148335578419144354",
+      "concreteTypeId": "a8978ed80be9a6a2bc564d888732c576302df61c5e94aa6ebda2642fcab202a6"
+    },
+    {
+      "logId": "17749596159215739991",
+      "concreteTypeId": "f6533baa58b124574115f3ef9c9f0b308c6029ec41358389cafdd6451f82f411"
+    },
+    {
+      "logId": "11232430981972343695",
+      "concreteTypeId": "9be19c77548dbb8f578e65da21d5e85dbc2b7c22f6a863e837039287a42e013c"
+    },
+    {
+      "logId": "15199682701450152254",
+      "concreteTypeId": "d2f01ee2b696093ecfc86da82e11864bacdc9ed5007bf1f5e980c9f6aa1972f5"
+    },
+    {
+      "logId": "18159118810335600742",
+      "concreteTypeId": "fc022658cc2ae066546794de628b6f106705641b98376b35c3ed23a5ab97a46e"
+    },
+    {
+      "logId": "7845998088195677205",
+      "concreteTypeId": "6ce295b0fb4c1c15e8ed1cfa4babda47d8a04940a5266a3229e12243a2e37c2c"
+    },
+    {
+      "logId": "12152039456660331088",
+      "concreteTypeId": "a8a4b78066c51a50da6349bd395fe1c67e774d75c1db2c5c22288a432d7a363d"
+    },
+    {
+      "logId": "18149631459970394923",
+      "concreteTypeId": "fbe071a6e7ca2b2b5e503e82638f9f11c861a6fb452b65473eca8260db87392d"
+    },
+    {
+      "logId": "7872304445726396561",
+      "concreteTypeId": "6d400b2f23401091672a24f55f96680d4a28b0b3e8d8b6a6506b7cfccad56c5a"
+    },
+    {
+      "logId": "12825160085427872429",
+      "concreteTypeId": "b1fc1f25a77262adad8eecc23a352fd8961bc6a2bacc44ffad1f91eaf392668b"
+    },
+    {
+      "logId": "274950752963923605",
+      "concreteTypeId": "03d0d240c9240e95045a4d1687649048c58009acbbac7f3cc2462424e954446f"
+    },
+    {
+      "logId": "17952413627041958220",
+      "concreteTypeId": "f923c913ecb7c94ce3baa647d89fa0227b53e2164bc67b9c5123458a83a9fae3"
+    },
+    {
+      "logId": "4110241452629244490",
+      "concreteTypeId": "390a82d2fd0d3a4ad4a1318900d79ce95ed499fd2419381b1b85db5b8c4ed6c1"
+    },
+    {
+      "logId": "8614244114039074780",
+      "concreteTypeId": "778bf161a9cc6fdc75697ee7ab3cb9b995998dd2ea7617eabe419643c2235fd6"
+    },
+    {
+      "logId": "3342276803466707238",
+      "concreteTypeId": "2e62270b6ba94126180979def77bc32a39556d22a923b07e5693be8cbaaf8a97"
+    }
+  ],
+  "messagesTypes": [],
+  "configurables": [
+    {
+      "name": "STAKING_ASSET",
+      "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974",
+      "offset": 59280
+    },
+    {
+      "name": "STAKING_CONTRACT",
+      "concreteTypeId": "29c10735d33b5159f0c71ee1dbd17b36a3e69e41f00fab0d42e1bd9f428d8a54",
+      "offset": 59312
+    }
+  ]
+}

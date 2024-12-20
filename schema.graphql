@@ -1,0 +1,60 @@
+type BuilderBonding_NewPositionEvent {
+  id: ID!
+}
+
+type BuilderBonding_PositionBondingEvent {
+  id: ID!
+}
+
+type BuilderBonding_RewardsClaimedEvent {
+  id: ID!
+}
+
+type BuilderBonding_PositionDepositEvent {
+  id: ID!
+}
+
+type BuilderBonding_BuilderRewardsExtendedEvent {
+  id: ID!
+}
+
+type BuilderBonding_PositionWithdrawEvent {
+  id: ID!
+}
+
+type BuilderBonding_BaseRewardsSyncedEvent {
+  id: ID!
+}
+
+type BuilderBonding_ParametersSetEvent {
+  id: ID!
+}
+
+type BuilderBonding_NewBuilderEvent {
+  id: ID!
+}
+
+type BuilderBonding_BuilderOwnershipTransferredEvent {
+  id: ID!
+}
+
+type BuilderBonding_OwnershipTransferredEvent {
+  id: ID!
+}
+
+type BuilderBonding_BuilderRewardsFundedEvent {
+  id: ID!
+}
+
+type BuilderBonding_Transfer {
+  id: ID!
+}
+
+type BuilderBonding_Mint {
+  id: ID!
+}
+
+type BuilderBonding_Burn {
+  id: ID!
+}
+
