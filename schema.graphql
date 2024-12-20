@@ -1,6 +1,7 @@
 type Position {
   id: ID!
   amount: BigInt!
+  assetId: String!
 }
 
 type BuilderBonding_NewPositionEvent {

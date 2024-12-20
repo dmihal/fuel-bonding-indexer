@@ -1,6 +1,7 @@
 /*
  * Please refer to https://docs.envio.dev for a thorough guide on all Envio indexer features
  */
+import { BigNumberCoder, bn, getMintedAssetId, hexlify } from "fuels";
 import {
   BuilderBonding,
   BuilderBonding_NewPositionEvent,
@@ -26,9 +27,16 @@ BuilderBonding.NewPositionEvent.handler(async ({ event, context }) => {
     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
   };
 
+  const u256Coder = new BigNumberCoder("u256");
+  const assetId = getMintedAssetId(
+    event.srcAddress,
+    hexlify(u256Coder.encode(bn(event.params.position_id.toString()))),
+  );
+
   const position: Position = {
     id: event.params.position_id.toString(),
     amount: 0n,
+    assetId,
   };
 
   context.BuilderBonding_NewPositionEvent.set(entity);
