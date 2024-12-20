@@ -3,6 +3,8 @@ name: builder-mainnet
 ecosystem: fuel
 networks:
 - id: 9889
+  hyperfuel_config:
+    url: https://mainnet2.hypersync.xyz
   start_block: 0
   contracts:
   - name: BuilderBonding
