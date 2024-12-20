@@ -18,6 +18,7 @@ import {
   BuilderBonding_Transfer,
   BuilderBonding_Mint,
   BuilderBonding_Burn,
+  Position,
 } from "generated";
 
 BuilderBonding.NewPositionEvent.handler(async ({ event, context }) => {
@@ -25,7 +26,13 @@ BuilderBonding.NewPositionEvent.handler(async ({ event, context }) => {
     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
   };
 
+  const position: Position = {
+    id: event.params.position_id.toString(),
+    amount: 0n,
+  };
+
   context.BuilderBonding_NewPositionEvent.set(entity);
+  context.Position.set(position);
 });
 
 BuilderBonding.PositionBondingEvent.handler(async ({ event, context }) => {

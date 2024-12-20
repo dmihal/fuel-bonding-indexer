@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./node_modules/envio/fuel.schema.json
-name: envio-indexer
+name: builder-testnet
 ecosystem: fuel
 networks:
-- id: 9889
+- id: 0
   start_block: 0
   contracts:
-  - name: BuilderBonding
+  - name: BuilderBondingTestnet
     address:
-    - 0x41a2cb3639537fa624a004cc1500d5a4e98f7d5ea0d5996812b860637fd8ee42
+    - 0x0897db4a5a3893da383e1e0dfba5634a83551f6780936bd6f1920e865d4fb646
     abi_file_path: abis/builderbonding-abi.json
     handler: src/EventHandlers.ts
     events:
@@ -38,3 +38,4 @@ networks:
     - name: Transfer
     - name: Mint
     - name: Burn
+

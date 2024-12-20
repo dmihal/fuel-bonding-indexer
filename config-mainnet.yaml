@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=./node_modules/envio/fuel.schema.json
+name: builder-mainnet
+ecosystem: fuel
+networks:
+- id: 9889
+  start_block: 0
+  contracts:
+  - name: BuilderBonding
+    address:
+    - 0x41a2cb3639537fa624a004cc1500d5a4e98f7d5ea0d5996812b860637fd8ee42
+    abi_file_path: abis/builderbonding-abi.json
+    handler: src/EventHandlers.ts
+    events:
+    - name: NewPositionEvent
+      logId: '18159118810335600742'
+    - name: PositionBondingEvent
+      logId: '12148335578419144354'
+    - name: RewardsClaimedEvent
+      logId: '11232430981972343695'
+    - name: PositionDepositEvent
+      logId: '7872304445726396561'
+    - name: BuilderRewardsExtendedEvent
+      logId: '12825160085427872429'
+    - name: PositionWithdrawEvent
+      logId: '3342276803466707238'
+    - name: BaseRewardsSyncedEvent
+      logId: '16714692388459207143'
+    - name: ParametersSetEvent
+      logId: '17952413627041958220'
+    - name: NewBuilderEvent
+      logId: '15199682701450152254'
+    - name: BuilderOwnershipTransferredEvent
+      logId: '4110241452629244490'
+    - name: OwnershipTransferredEvent
+      logId: '8614244114039074780'
+    - name: BuilderRewardsFundedEvent
+      logId: '274950752963923605'
+    - name: Transfer
+    - name: Mint
+    - name: Burn
