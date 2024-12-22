@@ -10,7 +10,7 @@ describe("BuilderBonding contract NewPositionEvent event tests", () => {
   const mockDb = MockDb.createMockDb();
 
   // Creating mock for BuilderBonding contract NewPositionEvent event
-  const event = BuilderBonding.NewPositionEvent.mock({data: {} /* It mocks event fields with default values, so you only need to provide data */});
+  const event = BuilderBonding.NewPositionEvent.mockData({ position_id: 0n });
 
   it("BuilderBonding_NewPositionEvent is created correctly", async () => {
     // Processing the event

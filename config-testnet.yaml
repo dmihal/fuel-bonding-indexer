@@ -5,7 +5,7 @@ networks:
 - id: 0
   start_block: 0
   contracts:
-  - name: BuilderBondingTestnet
+  - name: BuilderBonding
     address:
     - 0x0dcc3b6129c9d24576fc7b21faae8cb9b0a6edcd594e5e1b3f6de618486b4ba1
     abi_file_path: abis/builderbonding-abi.json
