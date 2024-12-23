@@ -7,7 +7,7 @@ type Position {
 type Builder {
   id: ID!
   owner: String!
-  # rewardAsset: String!
+  rewardAsset: String!
   # fundTime: Int!
   # endTime: Int!
   # rewards: BigInt!

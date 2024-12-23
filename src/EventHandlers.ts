@@ -101,6 +101,7 @@ BuilderBonding.NewBuilderEvent.handler(async ({ event, context }) => {
   const builder: Builder = {
     id: event.params.builder_id.toString(),
     owner: event.params.owner.payload.bits.toString(),
+    rewardAsset: event.params.reward_asset.bits,
   };
 
   const entity: BuilderBonding_NewBuilderEvent = {
