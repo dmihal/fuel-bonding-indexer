@@ -2,6 +2,7 @@ type Position {
   id: ID!
   amount: BigInt!
   assetId: String!
+  totalBaseRewardsEarned: BigInt!
 }
 
 type Builder {

@@ -35,6 +35,7 @@ BuilderBonding.NewPositionEvent.handler(async ({ event, context }) => {
     id: event.params.position_id.toString(),
     amount: 0n,
     assetId,
+    totalBaseRewardsEarned: 0n,
   };
 
   context.BuilderBonding_NewPositionEvent.set(entity);
