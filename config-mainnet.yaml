@@ -7,7 +7,7 @@ networks:
   contracts:
   - name: BuilderBonding
     address:
-    - 0x41a2cb3639537fa624a004cc1500d5a4e98f7d5ea0d5996812b860637fd8ee42
+    - 0x199e0d190c1c7868126b98a70d8503e501e356828dc50b064cfe83dcc110d2db
     abi_file_path: abis/builderbonding-abi.json
     handler: src/EventHandlers.ts
     events:

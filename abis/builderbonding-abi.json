@@ -403,6 +403,10 @@
         {
           "name": "owner",
           "typeId": 4
+        },
+        {
+          "name": "reward_asset",
+          "typeId": 28
         }
       ]
     },
@@ -1237,12 +1241,12 @@
     {
       "name": "STAKING_ASSET",
       "concreteTypeId": "c0710b6731b1dd59799cf6bef33eee3b3b04a2e40e80a0724090215bbf2ca974",
-      "offset": 59800
+      "offset": 59976
     },
     {
       "name": "STAKING_CONTRACT",
       "concreteTypeId": "29c10735d33b5159f0c71ee1dbd17b36a3e69e41f00fab0d42e1bd9f428d8a54",
-      "offset": 59832
+      "offset": 60008
     }
   ]
 }
