@@ -16,9 +16,6 @@ import {
   BuilderBonding_BuilderOwnershipTransferredEvent,
   BuilderBonding_OwnershipTransferredEvent,
   BuilderBonding_BuilderRewardsFundedEvent,
-  BuilderBonding_Transfer,
-  BuilderBonding_Mint,
-  BuilderBonding_Burn,
   Position,
   Builder,
 } from "generated";
@@ -136,28 +133,4 @@ BuilderBonding.BuilderRewardsFundedEvent.handler(async ({ event, context }) => {
   };
 
   context.BuilderBonding_BuilderRewardsFundedEvent.set(entity);
-});
-
-BuilderBonding.Transfer.handler(async ({ event, context }) => {
-  const entity: BuilderBonding_Transfer = {
-    id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
-  };
-
-  context.BuilderBonding_Transfer.set(entity);
-});
-
-BuilderBonding.Mint.handler(async ({ event, context }) => {
-  const entity: BuilderBonding_Mint = {
-    id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
-  };
-
-  context.BuilderBonding_Mint.set(entity);
-});
-
-BuilderBonding.Burn.handler(async ({ event, context }) => {
-  const entity: BuilderBonding_Burn = {
-    id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
-  };
-
-  context.BuilderBonding_Burn.set(entity);
 });
