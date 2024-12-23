@@ -4,6 +4,15 @@ type Position {
   assetId: String!
 }
 
+type Builder {
+  id: ID!
+  owner: String!
+  # rewardAsset: String!
+  # fundTime: Int!
+  # endTime: Int!
+  # rewards: BigInt!
+}
+
 type BuilderBonding_NewPositionEvent {
   id: ID!
 }
@@ -51,16 +60,3 @@ type BuilderBonding_OwnershipTransferredEvent {
 type BuilderBonding_BuilderRewardsFundedEvent {
   id: ID!
 }
-
-type BuilderBonding_Transfer {
-  id: ID!
-}
-
-type BuilderBonding_Mint {
-  id: ID!
-}
-
-type BuilderBonding_Burn {
-  id: ID!
-}
-

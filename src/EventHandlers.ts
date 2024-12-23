@@ -20,6 +20,7 @@ import {
   BuilderBonding_Mint,
   BuilderBonding_Burn,
   Position,
+  Builder,
 } from "generated";
 
 BuilderBonding.NewPositionEvent.handler(async ({ event, context }) => {
@@ -100,11 +101,17 @@ BuilderBonding.ParametersSetEvent.handler(async ({ event, context }) => {
 });
 
 BuilderBonding.NewBuilderEvent.handler(async ({ event, context }) => {
+  const builder: Builder = {
+    id: event.params.builder_id.toString(),
+    owner: event.params.owner.payload.bits.toString(),
+  };
+
   const entity: BuilderBonding_NewBuilderEvent = {
     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
   };
 
   context.BuilderBonding_NewBuilderEvent.set(entity);
+  context.Builder.set(builder);
 });
 
 BuilderBonding.BuilderOwnershipTransferredEvent.handler(async ({ event, context }) => {

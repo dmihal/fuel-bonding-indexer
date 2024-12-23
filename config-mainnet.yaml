@@ -35,6 +35,3 @@ networks:
       logId: '8614244114039074780'
     - name: BuilderRewardsFundedEvent
       logId: '274950752963923605'
-    - name: Transfer
-    - name: Mint
-    - name: Burn
