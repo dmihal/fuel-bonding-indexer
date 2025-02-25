@@ -4,12 +4,12 @@
 import { BigNumberCoder, bn, getMintedAssetId, hexlify } from "fuels";
 import {
   BuilderBonding,
-  BuilderBonding_NewPositionEvent,
-  BuilderBonding_PositionBondingEvent,
-  BuilderBonding_RewardsClaimedEvent,
-  BuilderBonding_PositionDepositEvent,
+  NewPositionEvent,
+  PositionBondingEvent,
+  RewardsClaimedEvent,
+  PositionDepositEvent,
   BuilderBonding_BuilderRewardsExtendedEvent,
-  BuilderBonding_PositionWithdrawEvent,
+  PositionWithdrawEvent,
   BuilderBonding_BaseRewardsSyncedEvent,
   BuilderBonding_ParametersSetEvent,
   BuilderBonding_NewBuilderEvent,
@@ -21,8 +21,10 @@ import {
 } from "generated";
 
 BuilderBonding.NewPositionEvent.handler(async ({ event, context }) => {
-  const entity: BuilderBonding_NewPositionEvent = {
+  const entity: NewPositionEvent = {
     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
+    position_id: event.params.position_id.toString(),
+    txId: event.transaction.id,
   };
 
   const u256Coder = new BigNumberCoder("u256");
@@ -38,32 +40,41 @@ BuilderBonding.NewPositionEvent.handler(async ({ event, context }) => {
     totalBaseRewardsEarned: 0n,
   };
 
-  context.BuilderBonding_NewPositionEvent.set(entity);
+  context.NewPositionEvent.set(entity);
   context.Position.set(position);
 });
 
 BuilderBonding.PositionBondingEvent.handler(async ({ event, context }) => {
-  const entity: BuilderBonding_PositionBondingEvent = {
+  const entity: PositionBondingEvent = {
     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
+    position_id: event.params.position_id.toString(),
+    builder_id: event.params.builder_id.toString(),
+    txId: event.transaction.id,
   };
 
-  context.BuilderBonding_PositionBondingEvent.set(entity);
+  context.PositionBondingEvent.set(entity);
 });
 
 BuilderBonding.RewardsClaimedEvent.handler(async ({ event, context }) => {
-  const entity: BuilderBonding_RewardsClaimedEvent = {
+  const entity: RewardsClaimedEvent = {
     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
+    position_id: event.params.position_id.toString(),
+    amount: event.params.amount,
+    txId: event.transaction.id,
   };
 
-  context.BuilderBonding_RewardsClaimedEvent.set(entity);
+  context.RewardsClaimedEvent.set(entity);
 });
 
 BuilderBonding.PositionDepositEvent.handler(async ({ event, context }) => {
-  const entity: BuilderBonding_PositionDepositEvent = {
+  const entity: PositionDepositEvent = {
     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
+    position_id: event.params.position_id.toString(),
+    amount: event.params.amount,
+    txId: event.transaction.id,
   };
 
-  context.BuilderBonding_PositionDepositEvent.set(entity);
+  context.PositionDepositEvent.set(entity);
 });
 
 BuilderBonding.BuilderRewardsExtendedEvent.handler(async ({ event, context }) => {
@@ -75,11 +86,14 @@ BuilderBonding.BuilderRewardsExtendedEvent.handler(async ({ event, context }) =>
 });
 
 BuilderBonding.PositionWithdrawEvent.handler(async ({ event, context }) => {
-  const entity: BuilderBonding_PositionWithdrawEvent = {
+  const entity: PositionWithdrawEvent = {
     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
+    position_id: event.params.position_id.toString(),
+    amount: event.params.amount,
+    txId: event.transaction.id,
   };
 
-  context.BuilderBonding_PositionWithdrawEvent.set(entity);
+  context.PositionWithdrawEvent.set(entity);
 });
 
 BuilderBonding.BaseRewardsSyncedEvent.handler(async ({ event, context }) => {

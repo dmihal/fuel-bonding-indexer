@@ -14,28 +14,42 @@ type Builder {
   # rewards: BigInt!
 }
 
-type BuilderBonding_NewPositionEvent {
+type NewPositionEvent {
   id: ID!
+  position: Position!
+  txId: String!
 }
 
-type BuilderBonding_PositionBondingEvent {
+type PositionBondingEvent {
   id: ID!
+  position: Position!
+  builder: Builder
+  txId: String!
 }
 
-type BuilderBonding_RewardsClaimedEvent {
+type RewardsClaimedEvent {
   id: ID!
+  position: Position!
+  txId: String!
+  amount: BigInt!
 }
 
-type BuilderBonding_PositionDepositEvent {
+type PositionDepositEvent {
   id: ID!
+  position: Position!
+  txId: String!
+  amount: BigInt!
 }
 
 type BuilderBonding_BuilderRewardsExtendedEvent {
   id: ID!
 }
 
-type BuilderBonding_PositionWithdrawEvent {
+type PositionWithdrawEvent {
   id: ID!
+  position: Position!
+  txId: String!
+  amount: BigInt!
 }
 
 type BuilderBonding_BaseRewardsSyncedEvent {
